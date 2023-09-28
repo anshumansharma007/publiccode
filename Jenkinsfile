@@ -1,27 +1,40 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Example') {
             
             steps {
-                echo 'Hello we are building world'
+                echo 'Hello World'
             }
         }
         
     stages {
-        stage ('test') {
-
+        stage('Apple') {
+            
             steps {
-                echo 'testing is completed'
+                echo 'Hello Apple'
             }
         }
-
+        
    stages {
-       stage ('deploy') { 
+       stage ('game') { 
 
            steps {
-               echo 'deployment is completed'
+               echo 'non completed'
           }
        }
+    }
+}
+
+
+pipeline {
+    agent none
+    stages {
+        stage('Example') {
+            
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
 }
